@@ -1,0 +1,50 @@
+.epStep1 {
+  height: 100vh;
+  width: 100%;
+  background-color: #0d0d2a;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .epStep1_container {
+    display: flex;
+    gap: 5rem;
+    justify-content: space-between;
+    flex-direction: column;
+    .epStep1_heading {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      h1 {
+        font-size: 1.8rem;
+      }
+      p {
+        font-size: 0.8rem;
+      }
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+      width: 90%;
+      margin: 0 auto;
+      input {
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid white;
+        outline: none;
+        font-size: 2.5rem;
+        padding: 0 0.5rem;
+        color: white;
+      }
+      button {
+        padding: 0.8rem 0;
+        background-color: transparent;
+        border: 1px solid white;
+        border-radius: 3rem;
+        color: white;
+      }
+    }
+  }
+}

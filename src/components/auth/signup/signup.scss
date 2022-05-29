@@ -1,0 +1,105 @@
+.signup {
+  height: 100vh;
+  width: 100%;
+  background-color: #5e4bd8;
+  color: white;
+  .signup_container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .login_content {
+      background-color: #191058;
+      width: 28rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 1.9rem;
+      padding: 2rem 1.5rem;
+      border-radius: 1rem;
+    }
+    .l_social_heading {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      width: 100%;
+      justify-content: space-between;
+      span {
+        height: 1px;
+        width: 7rem;
+        background-color: grey;
+      }
+    }
+    .l_social_button {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      gap: 1rem;
+      button {
+        background-color: transparent;
+        color: white;
+        font-weight: 600;
+        padding: 0.6rem 3.5rem;
+        border-radius: 2rem;
+        border: 2px solid blue;
+      }
+    }
+    .l_with_email_heading {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      width: 100%;
+      justify-content: space-between;
+      span {
+        height: 2px;
+        width: 6.5rem;
+        background-color: grey;
+      }
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      gap: 1.2rem;
+      input {
+        padding: 0.6rem 1rem;
+        background-color: transparent;
+        border: 1px solid grey;
+        border-radius: 8px;
+        outline: none;
+        color: white;
+      }
+      .l_activity {
+        display: flex;
+        justify-content: space-between;
+        .la_con {
+          display: flex;
+          align-items: center;
+          gap: 0.6rem;
+          font-size: 0.8rem;
+        }
+        .for-pass {
+          font-size: 0.9rem;
+          font-weight: 600;
+        }
+      }
+      button {
+        background-color: transparent;
+        font-size: 1rem;
+        // font-weight: 600;
+        padding: 0.4rem 0;
+        border: 1px solid white;
+        border-radius: 2rem;
+        color: white;
+      }
+    }
+    .not_regiter_text {
+      font-size: 0.8rem;
+      span {
+        font-size: 0.9rem;
+        font-weight: 600;
+      }
+    }
+  }
+}

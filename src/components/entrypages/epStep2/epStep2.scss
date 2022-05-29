@@ -1,0 +1,52 @@
+.epStep2 {
+  height: 100vh;
+  width: 100%;
+  color: white;
+  background-color: #0d0d2a;
+
+  .epStep2_container {
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    .epStep2_heading {
+      padding-top: 5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      h1 {
+        font-size: 3rem;
+      }
+      p {
+        font-size: 0.8rem;
+      }
+    }
+    .epStep2_card_container {
+      margin-top: 1.5rem;
+      display: flex;
+      gap: 0.6rem;
+      justify-content: space-between;
+    }
+    .epStep2_next_btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 1.5rem;
+      button {
+        padding: 0.66rem 14rem;
+        background-color: transparent;
+        color: white;
+        border: 1px solid white;
+        border-radius: 3rem;
+      }
+    }
+    .seStep2_bottom_text {
+      margin: 1rem;
+      text-align: center;
+      font-size: 0.9rem;
+      span {
+        font-weight: 600;
+      }
+    }
+  }
+}
