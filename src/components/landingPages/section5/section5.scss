@@ -1,0 +1,51 @@
+.section5 {
+  width: 100%;
+  background-color: black;
+  color: white;
+  .section5_container {
+    width: 85%;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    .section5_left {
+      flex: 1;
+      padding: 2rem 0;
+      .section5_box {
+        background-color: #231b36;
+        height: 60vh;
+        width: 80%;
+
+        border-radius: 1rem;
+      }
+    }
+    .section5_right {
+      flex: 1;
+      p {
+        font-size: 0.9rem;
+        padding: 0.7rem 0;
+      }
+      form {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        input {
+          background-color: transparent;
+          padding: 0.6rem 0.9rem;
+          border-radius: 0.4rem;
+          outline: none;
+          border: 1px solid #6e6b6b;
+          color: white;
+        }
+        button {
+          background-color: transparent;
+          border: 1px solid white;
+          outline: none;
+          padding: 0.7rem 0;
+          color: white;
+          border-radius: 10rem;
+        }
+      }
+    }
+  }
+}

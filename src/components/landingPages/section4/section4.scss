@@ -1,0 +1,30 @@
+.section4 {
+  background-color: black;
+  width: 100%;
+  color: white;
+  .section4_container {
+    width: 85%;
+    margin: 0 auto;
+    h1 {
+      padding: 3rem 0;
+      text-align: center;
+      font-size: 2.2rem;
+    }
+    .section4_brandList {
+      display: flex;
+      justify-content: space-between;
+      font-size: 2rem;
+      padding: 5rem 0;
+    }
+    .section4_newList {
+      display: flex;
+      justify-content: space-between;
+      padding: 5rem 0;
+      .section4_news_1 {
+        height: 6rem;
+        width: 10rem;
+        background-color: white;
+      }
+    }
+  }
+}

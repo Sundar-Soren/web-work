@@ -1,0 +1,29 @@
+.section2 {
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  // background-color: white;
+  color: white;
+  .section2_container {
+    width: 85%;
+    margin: 0 auto;
+    .section2_heading {
+      padding-top: 2rem;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+    .section2_card_Section {
+      width: 100%;
+      margin-top: 2rem;
+      display: flex;
+      gap: 0.7rem;
+      .pagination_bullet {
+        opacity: 1;
+      }
+      .pagination_bullet_el {
+        opacity: 1;
+      }
+    }
+  }
+}

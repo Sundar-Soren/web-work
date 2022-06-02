@@ -1,0 +1,121 @@
+.section3 {
+  transition: all 1s ease-in-out;
+  width: 100%;
+  background-color: #12112a;
+  color: white;
+  .section3_conatiner {
+    width: 85%;
+    margin: 0 auto;
+    .section3_heading {
+      padding: 3rem 0;
+      h2 {
+        text-align: center;
+        font-size: 2rem;
+      }
+    }
+    .section3_content_1 {
+      display: flex;
+      gap: 2rem;
+      .section3_img {
+        width: 70%;
+        img {
+          height: 60vh;
+          width: 100%;
+        }
+      }
+      .section3_accrodion {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        .collapes_content {
+          background-color: #373656;
+          padding: 1rem;
+          border-radius: 10px;
+          width: 90%;
+          .accrodion_heading {
+            font-size: 1rem;
+          }
+          .accrodion_text {
+            font-size: 0.8rem;
+          }
+        }
+        .collapes_content_normal {
+          background-color: inherit;
+          .accrodion_heading {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+    .section3_content_2 {
+      display: flex;
+      gap: 4rem;
+      padding: 5rem 0;
+      .section_col_1 {
+        flex: 1;
+        h1 {
+          font-size: 1.5rem;
+        }
+        p {
+          font-size: 0.7rem;
+        }
+        .fihwnef {
+          font-size: 0.8rem;
+          padding: 1rem 0;
+        }
+        button {
+          padding: 0.7rem 1.5rem;
+          color: white;
+          border-radius: 10rem;
+          background-color: transparent;
+          border: 1.5px solid white;
+        }
+      }
+      .section_col_2 {
+        flex: 1;
+        display: grid;
+        gap: 1rem;
+        .setion3_smallcard {
+          display: flex;
+          gap: 1rem;
+          img {
+            height: 3rem;
+            width: 6rem;
+            border-radius: 10px;
+          }
+          .setion3_smallcard_text {
+            h4 {
+              font-size: 1.2rem;
+            }
+            p {
+              font-size: 0.7rem;
+            }
+          }
+        }
+      }
+      .section_col_3 {
+        flex: 1;
+        display: grid;
+        gap: 1rem;
+        .setion3_smallcard {
+          display: flex;
+          gap: 1rem;
+          img {
+            height: 3rem;
+            width: 6rem;
+            border-radius: 10px;
+          }
+          .setion3_smallcard_text {
+            h4 {
+              font-size: 1.2rem;
+            }
+            p {
+              font-size: 0.7rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

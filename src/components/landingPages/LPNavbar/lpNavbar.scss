@@ -1,0 +1,45 @@
+.lPNavbar {
+  background-color: #0e0d20;
+  color: white;
+  padding: 1.5rem 0;
+  .LPNavbar_container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+    .LPNavbar_logo {
+      font-size: 1.5rem;
+      font-weight: 800;
+    }
+    .Nvabar_Navigation {
+      ul {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        li {
+          list-style: none;
+          font-size: 1.1rem;
+          font-weight: 500;
+          button {
+            background-color: transparent;
+            padding: 0.7rem 1.5rem;
+            color: white;
+            font-size: 1rem;
+            border-radius: 100rem;
+            padding: 0.5rem 2rem;
+            border: solid 1px transparent;
+            background-image: linear-gradient(
+                rgba(255, 255, 255, 0),
+                rgba(255, 255, 255, 0)
+              ),
+              linear-gradient(25deg, #9578ff, #ff48cb);
+            background-origin: border-box;
+            background-clip: content-box, border-box;
+            box-shadow: 2px 1000px 1px #0e0d20 inset;
+          }
+        }
+      }
+    }
+  }
+}

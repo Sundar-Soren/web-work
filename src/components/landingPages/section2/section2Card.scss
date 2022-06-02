@@ -1,0 +1,56 @@
+.section2_card {
+  min-height: 24rem;
+  width: 22rem;
+  background-color: #0a0c2b;
+  padding: 0.8rem;
+  border-radius: 13px;
+  .section2_card_container {
+    .section2Card_img_container {
+      height: 18rem;
+      img {
+        height: 100%;
+        border-radius: 13px;
+        width: 100%;
+      }
+    }
+    .section2Card_text {
+      h2 {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 1; /* number of lines to show */
+        line-clamp: 1;
+        -webkit-box-orient: vertical;
+      }
+      .section2Card_profile_info {
+        margin-top: 0.2rem;
+        display: flex;
+        align-items: center;
+        img {
+          height: 3rem;
+          width: 3rem;
+          border-radius: 10px;
+        }
+        .section2Card_profile_name {
+          margin-left: 0.5rem;
+          p {
+            font-size: 0.9rem;
+          }
+          .creator_text {
+            font-size: 0.8rem;
+            color: grey;
+          }
+        }
+        .section2Card_profile_explore {
+          margin-left: auto;
+          button {
+            padding: 0.6rem 2rem;
+            background-color: transparent;
+            border-radius: 10rem;
+            border: 1px solid blue;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
