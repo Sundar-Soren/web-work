@@ -2,7 +2,6 @@
   height: 100vh;
   width: 100%;
   background-color: black;
-  // background-color: white;
   color: white;
   .section2_container {
     width: 85%;
@@ -18,6 +17,9 @@
       margin-top: 2rem;
       display: flex;
       gap: 0.7rem;
+      @media (max-width: 700px) {
+        gap: 0;
+      }
       .pagination_bullet {
         opacity: 1;
       }

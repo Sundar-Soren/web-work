@@ -1,5 +1,12 @@
 import React, { useState } from "react";
 import "./section3.scss";
+
+import section3main from "../assets/section3main.png";
+import sectionIcon1 from "../assets/sectionIcon1.png";
+import sectionIcon2 from "../assets/sectionIcon2.png";
+import sectionIcon3 from "../assets/sectionIcon3.png";
+import sectionIcon4 from "../assets/sectionIcon4.png";
+
 const Section3 = () => {
   const [accrodion, setAccrodion] = useState(1);
 
@@ -18,10 +25,7 @@ const Section3 = () => {
         </div>
         <div className="section3_content_1">
           <div className="section3_img">
-            <img
-              src="https://i.all3dp.com/workers/images/fit=cover,w=1284,h=722,gravity=0.5x0.5,format=auto/wp-content/uploads/2021/06/08145453/3d-design-video-games-Fortnite.jpg"
-              alt=""
-            />
+            <img src={section3main} alt="" />
           </div>
           <div className="section3_accrodion">
             <div
@@ -134,10 +138,7 @@ const Section3 = () => {
           </div>
           <div className="section_col_2">
             <div className="setion3_smallcard">
-              <img
-                src="https://images.unsplash.com/photo-1579762715118-a6f1d4b934f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aWxsdXN0cmF0aW9ufGVufDB8fDB8fA%3D%3D&w=1000&q=80"
-                alt=""
-              />
+              <img src={sectionIcon1} alt="" />
               <div className="setion3_smallcard_text">
                 <h4>Art Fairs & Galleries</h4>
                 <p>
@@ -147,10 +148,7 @@ const Section3 = () => {
               </div>
             </div>
             <div className="setion3_smallcard">
-              <img
-                src="https://images.unsplash.com/photo-1579762715118-a6f1d4b934f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aWxsdXN0cmF0aW9ufGVufDB8fDB8fA%3D%3D&w=1000&q=80"
-                alt=""
-              />
+              <img src={sectionIcon2} alt="" />
               <div className="setion3_smallcard_text">
                 <h4>Art Fairs & Galleries</h4>
                 <p>
@@ -162,10 +160,7 @@ const Section3 = () => {
           </div>
           <div className="section_col_3">
             <div className="setion3_smallcard">
-              <img
-                src="https://images.unsplash.com/photo-1579762715118-a6f1d4b934f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aWxsdXN0cmF0aW9ufGVufDB8fDB8fA%3D%3D&w=1000&q=80"
-                alt=""
-              />
+              <img src={sectionIcon3} alt="" />
               <div className="setion3_smallcard_text">
                 <h4>Art Fairs & Galleries</h4>
                 <p>
@@ -175,10 +170,7 @@ const Section3 = () => {
               </div>
             </div>{" "}
             <div className="setion3_smallcard">
-              <img
-                src="https://images.unsplash.com/photo-1579762715118-a6f1d4b934f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aWxsdXN0cmF0aW9ufGVufDB8fDB8fA%3D%3D&w=1000&q=80"
-                alt=""
-              />
+              <img src={sectionIcon4} alt="" />
               <div className="setion3_smallcard_text">
                 <h4>Art Fairs & Galleries</h4>
                 <p>

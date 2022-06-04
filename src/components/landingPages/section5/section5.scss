@@ -2,6 +2,7 @@
   width: 100%;
   background-color: black;
   color: white;
+  padding-bottom: 2rem;
   .section5_container {
     width: 85%;
     margin: 0 auto;
@@ -10,11 +11,13 @@
     .section5_left {
       flex: 1;
       padding: 2rem 0;
+      @media (max-width: 700px) {
+        display: none;
+      }
       .section5_box {
-        background-color: #231b36;
+        background-color: #1a1a26;
         height: 60vh;
         width: 80%;
-
         border-radius: 1rem;
       }
     }

@@ -1,7 +1,7 @@
 .section3 {
   transition: all 1s ease-in-out;
   width: 100%;
-  background-color: #12112a;
+  background-color: #1a1a26;
   color: white;
   .section3_conatiner {
     width: 85%;
@@ -16,11 +16,23 @@
     .section3_content_1 {
       display: flex;
       gap: 2rem;
+      @media (max-width: 800px) {
+        gap: 1rem;
+        flex-direction: column;
+      }
       .section3_img {
         width: 70%;
+        @media (max-width: 800px) {
+          width: 100%;
+        }
         img {
           height: 60vh;
           width: 100%;
+          border: 10px solid #343444;
+          border-radius: 10px;
+          @media (max-width: 800px) {
+            object-fit: cover;
+          }
         }
       }
       .section3_accrodion {
@@ -28,8 +40,12 @@
         display: flex;
         flex-direction: column;
         gap: 2rem;
+        @media (max-width: 800px) {
+          gap: 1rem;
+          width: 100%;
+        }
         .collapes_content {
-          background-color: #373656;
+          background-color: #343444;
           padding: 1rem;
           border-radius: 10px;
           width: 90%;
@@ -52,6 +68,14 @@
       display: flex;
       gap: 4rem;
       padding: 5rem 0;
+      @media (max-width: 800px) {
+        gap: 1rem;
+        padding: 2.5rem 0;
+      }
+      @media (max-width: 600px) {
+        flex-direction: column;
+        gap: 1.5rem;
+      }
       .section_col_1 {
         flex: 1;
         h1 {
@@ -76,12 +100,18 @@
         flex: 1;
         display: grid;
         gap: 1rem;
+        @media (max-width: 800px) {
+          gap: 0.3rem;
+        }
+        @media (max-width: 600px) {
+          gap: 1.5rem;
+        }
         .setion3_smallcard {
           display: flex;
           gap: 1rem;
+
           img {
-            height: 3rem;
-            width: 6rem;
+            height: 3.2rem;
             border-radius: 10px;
           }
           .setion3_smallcard_text {
@@ -98,12 +128,17 @@
         flex: 1;
         display: grid;
         gap: 1rem;
+        @media (max-width: 800px) {
+          gap: 0.3rem;
+        }
+        @media (max-width: 600px) {
+          gap: 1.5rem;
+        }
         .setion3_smallcard {
           display: flex;
           gap: 1rem;
           img {
-            height: 3rem;
-            width: 6rem;
+            height: 3.2rem;
             border-radius: 10px;
           }
           .setion3_smallcard_text {

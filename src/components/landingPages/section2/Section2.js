@@ -7,8 +7,13 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
 
-// import required modules
 import { FreeMode, Pagination } from "swiper";
+
+const cardData = [
+  { image: "section2img1", title: "The Lata Mangeshkar Tribute" },
+  { image: "section2img2", title: "Prodcut showroom ( Cromaxes)" },
+  { image: "section2img3", title: "Tarun Tahliani Boutique express" },
+];
 
 const Section2 = () => {
   return (
@@ -23,8 +28,8 @@ const Section2 = () => {
           <div className="section2_card_Section">
             <Swiper
               className="swiper_style"
-              slidesPerView={3}
-              spaceBetween={20}
+              slidesPerView={1}
+              spaceBetween={1}
               freeMode={true}
               pagination={{
                 clickable: true,
@@ -32,28 +37,20 @@ const Section2 = () => {
                 bulletClass: "pagination_bullet",
               }}
               modules={[FreeMode, Pagination]}
+              breakpoints={{
+                1200: {
+                  slidesPerView: 3,
+                },
+                900: {
+                  slidesPerView: 2,
+                },
+              }}
             >
-              <SwiperSlide>
-                <Section2Card />
-              </SwiperSlide>
-              <SwiperSlide>
-                <Section2Card />
-              </SwiperSlide>
-              <SwiperSlide>
-                <Section2Card />
-              </SwiperSlide>
-              <SwiperSlide>
-                <Section2Card />
-              </SwiperSlide>
-              <SwiperSlide>
-                <Section2Card />
-              </SwiperSlide>
-              <SwiperSlide>
-                <Section2Card />
-              </SwiperSlide>
-              <SwiperSlide>
-                <Section2Card />
-              </SwiperSlide>
+              {cardData.map((data) => (
+                <SwiperSlide>
+                  <Section2Card data={data} />
+                </SwiperSlide>
+              ))}
             </Swiper>
           </div>
         </div>

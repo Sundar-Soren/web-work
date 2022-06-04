@@ -1,26 +1,56 @@
 .lPNavbar {
-  background-color: #0e0d20;
+  background-color: #1a1a26;
   color: white;
   padding: 1.5rem 0;
   .LPNavbar_container {
     display: flex;
     justify-content: space-between;
-    width: 90%;
+    width: 85%;
     margin: 0 auto;
     align-items: center;
+    @media (max-width: 700px) {
+      align-items: flex-start;
+      width: 90%;
+    }
     .LPNavbar_logo {
-      font-size: 1.5rem;
-      font-weight: 800;
+      display: flex;
+      gap: 0.8rem;
+      img {
+        height: 2.5rem;
+        width: 2.5rem;
+      }
+      h1 {
+        font-weight: 800;
+        font-size: 1.5rem;
+      }
+      @media (max-width: 700px) {
+        line-height: 1;
+      }
+      .logo_img {
+      }
     }
     .Nvabar_Navigation {
       ul {
         display: flex;
         gap: 2rem;
         align-items: center;
+        @media (max-width: 800px) {
+          gap: 0.8rem;
+        }
+        @media (max-width: 700px) {
+          align-items: flex-end;
+        }
         li {
           list-style: none;
           font-size: 1.1rem;
           font-weight: 500;
+          @media (max-width: 1000px) {
+            font-size: 1rem;
+          }
+          @media (max-width: 800px) {
+            font-size: 0.8rem;
+          }
+
           button {
             background-color: transparent;
             padding: 0.7rem 1.5rem;
@@ -33,13 +63,51 @@
                 rgba(255, 255, 255, 0),
                 rgba(255, 255, 255, 0)
               ),
-              linear-gradient(25deg, #9578ff, #ff48cb);
+              linear-gradient(25deg, #4b50e6, #e250e5);
             background-origin: border-box;
             background-clip: content-box, border-box;
             box-shadow: 2px 1000px 1px #0e0d20 inset;
+            @media (max-width: 800px) {
+              font-size: 0.8rem;
+            }
           }
+        }
+      }
+      .lp_es-navbar {
+        @media (max-width: 700px) {
+          flex-direction: column;
+        }
+        li {
+          @media (max-width: 700px) {
+            font-size: 1.1rem;
+          }
+        }
+      }
+      .lp_hide_navgation {
+        display: flex;
+        @media (max-width: 700px) {
+          display: none;
         }
       }
     }
   }
+}
+.nav_menu {
+  display: none;
+  cursor: pointer;
+  margin-bottom: 0.8rem;
+  @media (max-width: 700px) {
+    display: grid;
+    gap: 4px;
+  }
+  div {
+    margin-left: auto;
+    height: 4px;
+    width: 2rem;
+    border-radius: 0.5rem;
+    background-color: white;
+  }
+}
+.onLyShowMenu {
+  margin: 0;
 }
